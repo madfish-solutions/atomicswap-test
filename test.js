@@ -47,8 +47,8 @@ const createTezosFromFaucet = async path => {
 };
 
 const getAccounts = async () => {
-  const Tezos1 = await createTezosFromFaucet("./faucet.json");
-  const Tezos2 = await createTezosFromFaucet("./faucet2.json");
+  const Tezos1 = await createTezosFromFaucet("./alice.json");
+  const Tezos2 = await createTezosFromFaucet("./bob.json");
   return { Tezos1, Tezos2 };
 };
 
